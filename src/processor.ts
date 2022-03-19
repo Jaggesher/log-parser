@@ -14,7 +14,7 @@ export type ProcessorSummary = {
 export interface IProcessor {
   ProcessLog(data: string): void;
   GetFilteredLog(): LogData[];
-  GetAmbiguousALogs(): string[];
+  GetAmbiguousLogs(): string[];
   Summary(): ProcessorSummary;
 }
 
@@ -62,7 +62,7 @@ export default class Processor implements IProcessor {
     return this.filteredLog;
   }
 
-  GetAmbiguousALogs(): string[] {
+  GetAmbiguousLogs(): string[] {
     return this.ambiguousLogs;
   }
 

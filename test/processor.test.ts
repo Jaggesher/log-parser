@@ -18,9 +18,9 @@ describe("Processor", () => {
     });
   });
 
-  describe("GetFilteredLog", () => {
+  describe("GetAmbiguousLogs", () => {
     it("Should return array of length 1", () => {
-      expect(processor.GetAmbiguousALogs().length).toBe(1);
+      expect(processor.GetAmbiguousLogs().length).toBe(1);
     });
   });
 

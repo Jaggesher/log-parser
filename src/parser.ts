@@ -47,7 +47,7 @@ export default class Parser {
     console.log("Summary: ", summary);
     if (summary.ambiguous > 0) {
       console.log("Ambiguous Logs: "); // May transport to another file
-      console.log(this.processor.GetAmbiguousALogs());
+      console.log(this.processor.GetAmbiguousLogs());
     }
   }
 }
